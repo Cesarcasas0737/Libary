@@ -4,11 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyBookLibary</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="logo">
+            <img src="./images/book-open-blank-variant.svg" alt="BookLogo" class="logoImg icon">
+            <p>My book</p>
+        </div>
+        <div class="login btn">Log in</div>
+    </div>
+
+    <div class="content">
+        <div class="add-content">
+            <button id="new-book-btn">+ Add Book Menu</button>
+
+            <form id="new-book-form" style="display: none;">
+                <label for="title">Title</label>
+                <input type="text" id="title">
+
+                <label for="author">Author</label>
+                <input type="text" id="author">
+
+                <label for="pages">Pages:</label>
+                <input type="text" id="pages">
+
+                <label for="read">Read:</label>
+                <input type="checkbox" id="read">
+
+                <input type="submit" value="Add book">
+            </form>
+        </div>
+
+        <div class="content-flex">
+            <div id="content-grid">
+            <!--
+                <div class="book">
+                    <div class="book-header">
+                        <p>" 1984"</p>
+                        <div class="book-close">x</div>
+                    </div>
+                    <div class="book-content">
+                        <div class="author">Author: GRR Martin</div>
+                        <div class="pages">pages: 123</div>
+                        <div class="read-status">Read:True</div>
+                    </div>
+                </div>
+            -->
+            </div>
+                </div>
+        </div>
+
+    <div class="footer">
+                <a href="https://github.com/Cesarcasas0737">
+                    <div class="githubLink">
+                        <p>Cesarcasas0737</p>
+                        <img src="./images/github.svg" alt="githubLogo" class="icon">
+                    </div>
+                </a>
+    </div>
 </body>
 </html>

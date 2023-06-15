@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --white-color: #fffbfb;
+    --grey-color: #f0eef1;
+    --black-color: #050505;
+}
+body{
+    background-color: var(--grey-color);
+}
+.icon{
+    width: 70px;
+    height: 70px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--grey-color);
+}
+.add-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#new-book-btn{
+    display: flex;
+    justify-self: center;
+    width: 200px;
+}
+#new-book-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    
+}
+
+.add-content > p{
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.book{
+    width: 1fr;
+    height: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.book-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    background-color: var(--white-color);
+}
+.book-close{
+    font-size: 24px;
+    cursor: pointer;
+}
+.book-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.book-content > div{
+    font-size: 26px;
+}
+
+.read-status{
+    display: flex;
+    justify-content: center;  
+      
+}
+
+#content-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 80px; 
+    max-width: 1200px;
+    min-height: 625px;
+    padding: 20px; 
+}
+.content-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer  p{
+    display: flex;
+    align-self: center;
+    
+}
+.githubLink{
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
